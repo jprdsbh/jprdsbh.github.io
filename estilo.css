@@ -1,0 +1,124 @@
+
+/*usando o conceito First-mobile*/
+/*teste css mobile*/
+body{
+	margin: 0px;
+}
+
+
+.page {
+  padding:  5px 7px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* acrescentados */
+p, h1, h2, h3{
+  font-family: sans-serif;
+}
+
+p{
+  font-size: 20px; 
+  line-height: 2;
+  color: #747474;
+}
+
+h2{
+  font-size: 36px; 
+  color: #e96d87;
+}
+h3{
+  color: #e96d87;
+  font-size: 26px; 
+}
+a{
+  text-decoration: none;
+}
+
+.capa{
+  width: 100%;
+  height: auto;
+}
+
+.img-float{
+	float: right;
+}
+
+.box {
+    
+    width: 95%;
+    padding: 30px 10px;
+    margin: 10px 10px;
+
+    justify-content: center;
+    align-items: center;
+}
+.produto{
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 350px;
+  margin-bottom: 30px;
+
+  border: 1px solid #e96d87;
+  min-height: 450px;
+}
+.produto:hover{
+  background-color:#fff0f5;
+}
+
+.produto img{
+  width: 100%;
+  height: auto;
+}
+.clearfix{
+    content: "";
+    clear: both;
+    display: table;
+    margin: 10px auto;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 16px;
+  line-height: 0.5;
+}
+.preco{
+  text-align: center;
+  line-height: 0.5;
+  color: #a90f19;
+}
+.cartao{
+  text-align: center;
+  line-height: 0.5;
+  font-size: 16px;
+}
+
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 1149px) {
+
+  /* acrescentados */
+  
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 1150px) {
+	  .page {
+	 	  width: 1150px;
+	    margin: 0 auto;
+	  }
+	
+  	/* acrescentados */
+  	.box {
+      float: left;
+      max-width:45%;
+    } 
+
+   .produto{
+      float: left;
+      margin: 25px;
+      border: none;
+    }
+}
